@@ -11,5 +11,4 @@ This is a simple login page inspired by the Flipkart website, created as part of
 ## Installation
 
 1. Clone the repository:
-   bash
    git clone https://github.com/Ubaidulla1810/Login-page.git
