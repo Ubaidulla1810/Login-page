@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 40%;
+            height: 70vh;
+            margin: 70px auto;
+            display: flex;
+        }
+
+        .box1 {
+            width: 50%;
+            height: inherit;
+            background-color: #2874f0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .box1>img {
+            margin-top: 170px;
+        }
+
+        .box1>h1 {
+            color: white;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .box1>p {
+            color: rgb(237, 229, 229);
+            font-size: 14px;
+            line-height: 1.5;
+
+        }
+
+        .box2 {
+            background-color: #f3f3f3;
+            padding: 40px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+
+        }
+
+
+        .box2 input[type="email"] {
+            width: 100%;
+            background-color: #f3f3f3;
+            border: none;
+            border-bottom: 1px solid grey;
+            /* margin-bottom: 90px; */
+            outline: none; 
+            padding: 5px;
+            float: left;
+            color: rgb(102, 102, 102);
+            opacity: 1;
+        }
+
+        .box2>P {
+            color: rgb(95, 95, 95);
+            font-size: 12px;
+            margin-bottom: 70px;
+            padding-top: 30px;
+        }
+
+        p>a {
+            text-decoration: none;
+            color: #2874f0;
+
+        }
+
+        button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: all 0.3 ease;
+
+        }
+
+        button:hover {
+            background-color: #e64a19;
+        }
+
+        .create-account {
+            text-align: center;
+            font-size: 14px;
+            position: absolute;
+            margin-top: 150%;
+        }
+
+        .create-account a {
+            color: #2874f0;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">
+            <h1>Login</h1> <br>
+            <p>
+                Get acess to your orders,
+                wishlist and
+                recommendations
+            </p>
+
+            <img src="flipkart.jpg.png" alt="" width="200px">
+
+        </div>
+        <div class="box box2">
+            <input type="email" name="email" placeholder="Enter Email / Number" required>
+
+            <p> By continuing, you agree to the flipkart's <a href="#">Terms of use</a> and
+                <a href="#">privacy and policy</a>
+            </P>
+            <button onclick="reqotp()">Request OTP</button>
+
+            <p class="create-account"> New to flipkart?<a href="#">create and account</a></p>
+        </div>
+    </div>
+
+    <script>
+        function reqotp(){
+            alert("you have requested for OTP")
+        }    </script>
+
+</body>
+
+</html>
